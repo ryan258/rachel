@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Rachel Media</a>
+      <a class="navbar-brand" href="{{site.baseurl}}">Rachel Media</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -18,12 +18,13 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li class="{% if page.url == '/photography' %}active{% endif %}"><a href="{{site.baseurl}}/photography">Photography</a></li>
             <li class="{% if page.url == '/web-development' %}active{% endif %}"><a href="{{site.baseurl}}/web-development">Web Development</a></li>
             <li class="{% if page.url == '/design' %}active{% endif %}"><a href="{{site.baseurl}}/design">Design</a></li>
-            <li><a href="#">Branding</a></li>
+            <li class="{% if page.url == '/social-media' %}active{% endif %}"><a href="{{site.baseurl}}/social-media">Social Media</a></li>
             <li class="divider"></li>
+            <li class="{% if page.url == '/branding' %}active{% endif %}"><a href="{{site.baseurl}}/branding">Branding</a></li>
             <li class="{% if page.url == '/content' %}active{% endif %}"><a href="{{site.baseurl}}/content">Content</a></li>
+            <li class="{% if page.url == '/photography' %}active{% endif %}"><a href="{{site.baseurl}}/photography">Photography</a></li>
             <li class="divider"></li>
             <li class="{% if page.url == '/print' %}active{% endif %}"><a href="{{site.baseurl}}/print">Print</a></li>
           </ul>
@@ -32,11 +33,12 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Markets<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li class="{% if page.url == '/bands' %}active{% endif %}"><a href="{{site.baseurl}}/bands">Bands</a></li>
-            <li class="{% if page.url == '/venues' %}active{% endif %}"><a href="{{site.baseurl}}/venues">Venues</a></li>
             <li class="{% if page.url == '/studios' %}active{% endif %}"><a href="{{site.baseurl}}/studios">Studios</a></li>
             <li class="{% if page.url == '/labels' %}active{% endif %}"><a href="{{site.baseurl}}/labels">Labels</a></li>
             <li class="divider"></li>
+            <li class="{% if page.url == '/venues' %}active{% endif %}"><a href="{{site.baseurl}}/venues">Venues</a></li>
             <li class="{% if page.url == '/bars' %}active{% endif %}"><a href="{{site.baseurl}}/bars">Bars</a></li>
+            <li class="{% if page.url == '/events' %}active{% endif %}"><a href="{{site.baseurl}}/events">Events</a></li>
           </ul>
         </li>
       </ul>
