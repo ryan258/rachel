@@ -1,13 +1,16 @@
 body {
-  padding-top: 0px; }
+  padding-top: 50px; }
 
 p {
   margin: 0 0 10px;
-}
+  font-family: Georgia; }
 
 .row {
   padding: 10px 0px; }
 
 .container {
-  background-color: none;
+  background-color: #fff;
   background-font-family: Georgia; }
+
+.glyphicon {
+  font-size: 4em; }
