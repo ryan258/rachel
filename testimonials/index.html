@@ -3,3 +3,20 @@ layout: default
 title: Testimonials
 meta: Look at what clients are saying about us!
 ---
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h1>{{page.title}}</h1>
+			<p>{{page.meta}}</p>
+			<ul class="list-unstyled">
+				{% for post in site.categories.testimonials %}
+				<li>
+					<h2><a href="">{{post.title}}</a></h2>
+					<p>{{post.meta}}</p>
+				</li>
+				{% endfor %}
+			</ul>
+			<p class="text-center">Oh potatos....</p>
+		</div>
+	</div>
+</div>
